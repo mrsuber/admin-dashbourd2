@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root{
+  --admin2-color-main:#396aff;
+  --admin2-bg:#fbfefd;
+  --admin2-main-accent:#e9eefd;
+  --admin2-main-text:#4b5876;
+  --admin2-shadow: rgba(17,17,26,0.1) 0px 0px 16px;
+}
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  list-style-type: none;
+  box-sizing: border-box;
+}
+body{
+  background: var(--admin2-bg);
+  overflow-x: hidden;
+}
+
+img{
+  width: 100%;
+  height: auto;
+}
+#menu-toggle{
+  display: none;
+}
+
+.admin2__sidebar{
+  width: 345px;
+  height: 100%;
+  position: fixed;
+  top:0;
+  left:0;
+  bottom: 0;
+  padding: 1rem 1.5rem;
+}
+
+.admin2__sidebar-container{
+height: 100%;
+width: 100%;
+background: #fff;
+border-radius: 20px;
+box-shadow: var(--admin2-shadow);
+padding: 1.2rem;
+
+}
+.admin2__main-content{
+  margin-left: 354px;
+  width: calc(100vw - 345px);
+  padding: 1rem 1.2rem;
+
+}
+.admin2__sidebar-brand{
+  padding-top: 1rem;
+}
+
+.admin2__sidebar-brand h2 span{
+color: var(--admin2-color-main);
+}
